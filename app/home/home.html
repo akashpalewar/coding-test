@@ -1,0 +1,20 @@
+  <div class="header-box">
+          <span class="centreText">My Somethings</span>
+   </div>
+ <div class="m10">
+    <span>you have {{counter}} somethings.</span>
+  </div>
+  <div class="m10">  
+    <div>
+		<input type="button" class="button-add" value="Add a Something" ng-click="something()"></input>
+		
+		 <input type="text" style="margin-left: 520px;" ng-model="search" placeholder="search" align="right" />
+		 <modal-dialog show='modalShown' width='450px' height='50%'>
+  			<add-Something></add-Something>
+			</modal-dialog>
+	</div>
+	<br/>
+	
+	
+	<my-dialog data-items='names' data-filter="search">Check out the contents, {{search}}!</my-dialog>
+</div>

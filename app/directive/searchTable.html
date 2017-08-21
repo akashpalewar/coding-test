@@ -1,0 +1,35 @@
+<table>
+<thead>
+      <tr style="background-color:#f1f1f1">
+        <th width="22%">Name</th>
+        <th width="60%">Description</th>
+        <th width="18%"></th>
+		</tr>
+ </thead>  
+<tbody>
+  <tr ng-repeat="item in items | filter:{name: search}">
+    <td>
+        <span ng-hide="editMode">{{item.name}}</span>
+        <input type="text" ng-show="editMode" ng-model="item.name" ng-required/>
+    </td>
+    <td>
+        <span ng-hide="editMode">{{item.description}}</span>
+        <input type="text" class="w-400" ng-show="editMode" ng-model="item.description" ng-required/>
+    </td>
+   <td><div id="navigation"><ul>
+        <li ng-hide="editMode"><a href ng-click="editMode = true; editItem(item)">
+        <font color="#16b1e4">edit</font></a></li>
+
+        <li ng-show="editMode"><a href  ng-click="editMode = false;cancelEdit()">
+        <font color="#16b1e4">cancel</font></a></li>
+
+        <li ng-show="editMode"><a href ng-click="editMode = false;">
+        <font color="#16b1e4">save</font></a></li>
+
+        <li ng-hide="editMode"><a ng-href="#" ng-click="deleteItem($index)"><font color="#16b1e4">delete</font></a></li>
+    	</ul>
+    </div>
+    </td>
+  </tr>
+ </tbody> 
+</table>
