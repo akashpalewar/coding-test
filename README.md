@@ -6,12 +6,10 @@ To get you started you can simply clone the `coding-test` repository and install
 
 You need git to clone the `coding-test` repository. 
 
-We also use a number of Node.js tools to initialize and test `angular-seed`. You must have Node.js
-and its package manager (npm) installed. 
 
 ### Clone `coding-test`
 
-Clone the `angular-seed` repository using git:
+Clone the `coding-test` repository using git:
 
 ```
 git clone https://github.com/crackthehack/coding-test.git
