@@ -44,6 +44,11 @@ two new folders in your project.
 `angular-seed` changes this location through the `.bowerrc` file. Putting it in the `app` folder
 makes it easier to serve the files by a web server.*
 
+*********************************************
+for some reason it is creating bower_components out side of app folder.
+Please cut copy and paste bower_components from out side of app folder into app folder
+*********************************************
+
 ### Run the Application
 
 We have preconfigured the project with a simple development web server. The simplest way to start
